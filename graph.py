@@ -24,11 +24,13 @@ fig = plt.figure()
 bar1 = plt.bar(x[0], y[0], width=0.60,color='r',  label='Largura de banda única', yerr=yerr[0])
 
 bar2 = plt.bar(x[1], y[1], width=0.60,  color='b',  label='Maior largura de banda',  yerr=yerr[1], hatch="/", edgecolor='black')
-
-
-plt.xlabel('ID do Nó')
+#plt.yticks(labelsize=40)
+plt.ylabel(r"$y$",fontsize=12)
+plt.xlabel(r"$y$",fontsize=12)
+plt.xticks([])
+plt.xlabel('Nó sorvedouro')
 plt.ylabel('Pacotes recebidos por segundo (pcts/s)')
-plt.xticks(x, ('Nó 0', 'Nó 0'))
+#plt.xticks(x, ('Nó sorvedouro', 'Nó sorvedouro 0'))
 plt.legend()
 
 plt.show()
